@@ -1,0 +1,147 @@
+@font-face {
+    font-family: Inter;
+    src: url(./fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(./fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(./fonts/Inter-SemiBold.ttf);
+}
+
+p, h5, h2{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Inter: 'Inter Semibold';
+    --Inter: 'Inter Regular';
+    --Inter: 'Inter Medium';
+
+
+    --p--: 14px;
+    --caption--:16px;
+    --capp--:20px;
+    --header--:30px;
+    
+    --ptext: #D1D5DB;
+    --labtext: #F9FAFB;
+}
+
+.cont1{
+    background-color: #111827;
+}
+
+button{
+    background-color: #374151;
+    font-family: var(--Inter-Medium);
+    font-size: var(--p--);
+    border-radius: 12px;
+    padding: 4px 20px;
+    border: none;
+    color: var(--ptext);
+}
+
+.headerp{
+    color: var(--labtext);
+
+}
+
+.row2{
+    height: 356px;
+}
+
+.cardsrow{
+    margin-top: 1px;
+}
+img{
+    width: 64px;
+}
+
+.contentBox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 12px;
+    background-color: #1F2937;
+    height: 356px;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.15);
+}
+
+.description, a{
+    color: var(--ptext);
+    font-family: var(--Inter-Regular);
+    font-size: var(--caption--);
+}
+
+.customer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+h5{
+    font-size: var(--capp--);
+    color: var(--labtext);
+}
+
+.founder{
+    font-size: var(--p--);
+    color: var(--ptext);
+}
+
+h2{
+    font-size: var(--header--);
+    font-family: var(--Inter Semibold--);
+    color: var(--labtext);
+    padding: 0; 
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.bg{
+    width: 400px;
+    height: 480px;
+    margin-top: 40px;
+    background-color: #374151;
+}
+.piccontainer{
+    position: relative;
+}
+.piccontainer>img{
+    position: absolute;
+    width: 400px;
+    height: 480px;
+    margin-left:40px ;
+}
+
+.description{
+    margin-bottom: 16px;
+}
+
+.textDiv{
+    padding-left: 212px;
+}
+
+@media screen and (max-width:768px){
+    .textDiv{
+        margin-top: 24px;
+        padding-left: 0;
+    }
+
+    h2{
+        text-align: center;
+    }
+    .description{
+        font-size: 12px;
+        text-align: center;
+    }
+    
+}
